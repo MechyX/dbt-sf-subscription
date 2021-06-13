@@ -1,4 +1,4 @@
-Welcome to your new dbt project!
+Salesforce CPQ analysis
 
 ### Using the starter project
 
