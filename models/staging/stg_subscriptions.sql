@@ -12,7 +12,7 @@ select sbqq__account__c as account,
         when sbqq__subscriptionenddate__c__t is null then sbqq__enddate__c__t
         else sbqq__subscriptionenddate__c__t
        end as end_date
-    from {{var('schema')}}.sbqq__subscription__c)
+    from sbqq__subscription__c)
 
 select * from final
 
