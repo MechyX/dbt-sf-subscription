@@ -3,10 +3,7 @@ version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-#profile: 'subscription_analysis'
-
-vars:
-  schema:  # mention the schema to get the raw tables ex : db_name/public
+profile: 'subscription_analysis'
 
 
 # These configurations specify where dbt should look for different types of files.
@@ -32,7 +29,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   subscription_analysis:
-    final:
       materialized: table
 
 
